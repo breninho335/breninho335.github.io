@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Forge | Forjando os Desenvolvedores do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <span>Pixel</span>Forge
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato" class="btn-nav">Começar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Forje o seu próprio <span>Universo Gamer</span></h1>
+            <p>Aprenda programação, modelagem 3D e design de jogos com profissionais da indústria. Do zero ao seu primeiro jogo publicado.</p>
+            <a href="#cursos" class="btn-primary">Conhecer Cursos</a>
+        </div>
+    </section>
+
+    <section id="cursos" class="cursos">
+        <div class="container">
+            <h2 class="section-title">Nossas <span>Forjas</span> (Cursos)</h2>
+            
+            <div class="grid-cursos">
+                <div class="card-curso">
+                    <div class="card-badge">Popular</div>
+                    <div class="card-body">
+                        <h3>Mastery em Unity 2D/3D</h3>
+                        <p>Domine a engine mais utilizada do mercado. Crie jogos de ação, RPG e plataforma.</p>
+                        <span class="preco">R$ 49,90/mês</span>
+                        <button class="btn-curso" onclick="inscreverCurso('Unity 2D/3D')">Matricular-se</button>
+                    </div>
+                </div>
+
+                <div class="card-curso">
+                    <div class="card-badge">Premium</div>
+                    <div class="card-body">
+                        <h3>Unreal Engine 5 Blueprint</h3>
+                        <p>Crie jogos com gráficos realistas de última geração sem precisar digitar linhas de código complexas.</p>
+                        <span class="preco">R$ 59,90/mês</span>
+                        <button class="btn-curso" onclick="inscreverCurso('Unreal Engine 5')">Matricular-se</button>
+                    </div>
+                </div>
+
+                <div class="card-curso">
+                    <div class="card-body">
+                        <h3>Arte e Animação para Jogos</h3>
+                        <p>Aprenda Pixel Art, Modelagem 3D no Blender e técnicas de animação para dar vida aos seus personagens.</p>
+                        <span class="preco">R$ 39,90/mês</span>
+                        <button class="btn-curso" onclick="inscreverCurso('Arte e Animação')">Matricular-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container sobre-content">
+            <div class="sobre-texto">
+                <h2>Quem é a <span>Pixel Forge</span>?</h2>
+                <p>Nascemos com a missão de transformar jogadores em criadores. Nossa metodologia é 100% prática: você aprende errando, corrigindo e buildando seus próprios projetos. Não importa se você nunca escreveu uma linha de código, nós temos as ferramentas certas para moldar o seu talento.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Pixel Forge. Projeto Escolar - Todos os direitos reservados.</p>
+            <p>Desenvolvido com 🎮 e ☕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
