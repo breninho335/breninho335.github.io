@@ -1,0 +1,263 @@
+/* Configurações Gerais / Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #0b0c10;
+    --card-bg: #1f2833;
+    --primary-color: #66fcf1; /* Ciano Neon */
+    --secondary-color: #45f3ff;
+    --text-color: #c5c6c7;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+/* Navbar */
+header {
+    background-color: rgba(11, 12, 16, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1f2833;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.btn-nav {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
+}
+
+.btn-nav:hover {
+    background: var(--primary-color);
+    color: var(--bg-color) !important;
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.6);
+}
+
+/* Seção Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.9)), 
+                url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1920') no-repeat center center/cover;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(102, 252, 241, 0.8);
+}
+
+/* Seção Cursos */
+.cursos {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--white);
+}
+
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-curso {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #2f3b4c;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-curso:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(102, 252, 241, 0.1);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.preco {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.btn-curso {
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-curso:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 100px 0;
+    background-color: #12141c;
+    text-align: center;
+}
+
+.sobre-content {
+    max-width: 800px;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #07080a;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #1f2833;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Esconde o menu em telas muito pequenas para simplificar */
+    }
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+}
